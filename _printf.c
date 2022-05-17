@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ * _printf - a function that prints stirngs
+ * @format: the format of the string
+ * return: 0
+ */
 
 int _printf(const char *format, ...)
 {

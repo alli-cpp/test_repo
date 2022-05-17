@@ -1,4 +1,8 @@
 #include "main.h"
+/**
+ * unsi - a fucntion that prints unsigned decimals (in base 10)
+ * @n: an unsigned integer to be turned to base 10
+ */
 
 void unsi(unsigned int n)
 {
