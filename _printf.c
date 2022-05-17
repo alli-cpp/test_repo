@@ -55,6 +55,11 @@ int _printf(const char *format, ...)
 						unsi(intg);
 						format++;
 						break;
+					case ('o'):
+						intg = va_arg(arr, int);
+						octa(intg);
+						format++;
+						break;
 					default:
 						_putchar('%');
 				}
