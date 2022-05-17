@@ -5,7 +5,6 @@ int _printf(const char *format, ...)
 {
 	if (*format)
 	{
-		int arg[64], i = 0;
 		int intg;
 		char *strg;
 		char kar;
@@ -25,23 +24,7 @@ int _printf(const char *format, ...)
 							_putchar('0');
 							break;
 						}
-						if(intg < 0)
-						{
-							_putchar('-');
-							intg = (-1) * intg;
-						}
-						while(intg)
-						{
-							arg[i] = intg % 10;
-							intg = intg / 10;
-							i++;
-						}
-						i--;
-						while (i >= 0)
-						{
-							_putchar('0' + arg[i]);
-							i--;
-						}
+						deci(intg);
 						format++;
 						break;
 					case ('s'):
@@ -65,6 +48,11 @@ int _printf(const char *format, ...)
 					case ('x'):
 						intg = va_arg(arr, int);
 						hex(intg);
+						format++;
+						break;
+					case ('u'):
+						intg = va_arg(arr, int);
+						unsi(intg);
 						format++;
 						break;
 					default:

@@ -1,6 +1,6 @@
 #include "main.h"
 
-int hex(int n)
+void hex(int n)
 {
 	int arr[64], i = 0;
 	if (n < 0)
@@ -42,5 +42,4 @@ int hex(int n)
 		}
 		i--;
 	}
-	return (0);
 }

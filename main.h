@@ -3,5 +3,7 @@
 #include <stdarg.h>
 int _printf(const char *format, ...);
 int _putchar(char a);
-int hex(int n);
+void hex(int n);
+void deci(int n);
+void unsi(int n);
 #endif
