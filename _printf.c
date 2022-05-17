@@ -28,6 +28,17 @@ int _printf(const char *format, ...)
 						deci(intg);
 						format++;
 						break;
+					case ('i'):
+						intg = va_arg(arr, int);
+						if (intg == 0)
+						{
+							_putchar('0');
+							format++;
+							break;
+						}
+						deci(intg);
+						format++;
+						break;
 					case ('s'):
 						strg = va_arg(arr, char *);
 						while (*strg)
@@ -59,6 +70,11 @@ int _printf(const char *format, ...)
 					case ('o'):
 						intg = va_arg(arr, int);
 						octa(intg);
+						format++;
+						break;
+					case ('X'):
+						intg = va_arg(arr, int);
+						hex_2(intg);
 						format++;
 						break;
 					default:
