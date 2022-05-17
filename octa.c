@@ -1,8 +1,9 @@
 #include "main.h"
 
-void octa(int n)
+void octa(unsigned int n)
 {
 	int arr[64], i = 0;
+
 
 	while (n)
 	{

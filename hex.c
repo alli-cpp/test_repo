@@ -1,12 +1,9 @@
 #include "main.h"
 
-void hex(int n)
+void hex(unsigned int n)
 {
 	int arr[64], i = 0;
-	if (n < 0)
-	{
-		n = n * (-1);
-	}
+
 	while (n)
 	{
 		arr[i] = n % 16;

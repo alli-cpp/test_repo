@@ -1,10 +1,9 @@
 #include "main.h"
 
-void unsi(int n)
+void unsi(unsigned int n)
 {
 	int arr[64], i = 0;
-	if (n < 0)
-		n = n * (-1);
+
 	while (n)
 	{
 		arr[i] = n % 10;

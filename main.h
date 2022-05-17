@@ -3,8 +3,8 @@
 #include <stdarg.h>
 int _printf(const char *format, ...);
 int _putchar(char a);
-void hex(int n);
+void hex(unsigned int n);
 void deci(int n);
-void unsi(int n);
-void octa(int n);
+void unsi(unsigned int n);
+void octa(unsigned int n);
 #endif

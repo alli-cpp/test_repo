@@ -22,6 +22,7 @@ int _printf(const char *format, ...)
 						if (intg == 0)
 						{
 							_putchar('0');
+							format++;
 							break;
 						}
 						deci(intg);
